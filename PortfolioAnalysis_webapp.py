@@ -29,7 +29,7 @@ if selected == 'Portfolio Analysis':
     st.image(image, caption='Investments')
 
 if selected == 'Single Stock':
-    st.write('Prova')
+    st.write('Prova - CAMBIARE')
 elif selected == 'Asset Management':
     start = st.sidebar.date_input("Starting Date",date.today()+pd.DateOffset(years=-10))
     end = st.sidebar.date_input("Ending Date",date.today())
