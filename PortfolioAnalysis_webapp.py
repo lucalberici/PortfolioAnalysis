@@ -16,6 +16,15 @@ from scipy.optimize import minimize
 import openpyxl
 from zipfile import ZipFile
 
+with open('style.css') as f:
+    st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
+
+st.sidebar.header("Dashboard")
+st.sidebar.markdown('''
+---
+Created by [Luca Luigi Alberici](https://www.linkedin.com/in/luca-luigi-alberici-37820a21b/) and [Marco Migliardi](https://www.linkedin.com/in/marco-migliardi-b0aa71249/)
+''')
+
 with st.sidebar:
     selected = option_menu(
         menu_title= None, # or None if you don't want it
